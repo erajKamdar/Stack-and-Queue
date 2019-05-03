@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //LAST IN  FIRST OUT
+    class Stack{
+        constructor() {
+            this.see = []
+        
+        this.push = function(addElement) {
+            this.see.push(addElement)
+            return this.see
+        }
+        this.pop = function(){
+            this.see.pop()
+            return this.see
+        }
+    }
+    }
+    let stack = new Stack();
+      
+    //FIRST IN FIRST OUT
+    class Queue{
+        constructor() {
+            this.elements = []
+
+        this.enque = function(addElement) {
+            this.elements.push(addElement)
+            return this.elements
+        }
+        this.deque = function(){
+            this.elements.shift()
+            return this.elements
+        }
+    }
+    }
+    let queue = new Queue();
+    
+  
+</script>
+
+</html>
