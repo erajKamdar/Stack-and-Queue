@@ -10,37 +10,37 @@
     
 </body>
 <script>
-    //LAST IN  FIRST OUT
+                                            //STACK
     class Stack{
         constructor() {
-            this.see = []
-        
-        this.push = function(addElement) {
-            this.see.push(addElement)
-            return this.see
-        }
-        this.pop = function(){
-            this.see.pop()
-            return this.see
-        }
-    }
+            this.items = [];
+            
+            this.push = function(addItem) {
+               this.items.push(addItem)
+               return this.items;
+            }
+            this.pop = function(){
+               this.items.pop()
+               return this.items
+            }
+         }
     }
     let stack = new Stack();
       
-    //FIRST IN FIRST OUT
+                                           //QUEUE
     class Queue{
         constructor() {
             this.elements = []
 
-        this.enque = function(addElement) {
-            this.elements.push(addElement)
-            return this.elements
-        }
-        this.deque = function(){
-            this.elements.shift()
-            return this.elements
-        }
-    }
+            this.enqueue = function(addElement) {
+                this.elements.push(addElement)
+                return this.elements
+            }
+            this.dequeue = function(){
+              this.elements.shift()
+              return this.elements
+            }
+       }
     }
     let queue = new Queue();
     
