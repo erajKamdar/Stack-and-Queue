@@ -14,14 +14,13 @@
     class Stack{
         constructor() {
             this.items = [];
-            
             this.push = function(addItem) {
                this.items.push(addItem)
                return this.items;
             }
             this.pop = function(){
-               this.items.pop()
-               return this.items
+              return this.items.pop()
+               
             }
          }
     }
@@ -31,14 +30,12 @@
     class Queue{
         constructor() {
             this.elements = []
-
             this.enqueue = function(addElement) {
                 this.elements.push(addElement)
                 return this.elements
             }
             this.dequeue = function(){
-              this.elements.shift()
-              return this.elements
+              return this.elements.shift()
             }
        }
     }
